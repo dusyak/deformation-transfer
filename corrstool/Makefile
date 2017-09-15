@@ -1,12 +1,11 @@
-INCLUDE_PATH    := ./ ../external/include/ ../common/ ../gl_util/
+INCLUDE_PATH    := ./  ../common/ ../gl_util/ /usr/include/suitesparse
 SOURCE_PATH     := ./ ../common/ ../gl_util/
 DEPENDENCY_PATH := dep
 OBJECT_PATH     := obj
 
-EXTERNAL_LIBS := $(wildcard ../external/lib/*.a)
-LDLIBS := -lm -lpthread -lglut -lGL -lGLU
+LDLIBS := -lm -lpthread -lglut -lGL -lGLU -lcholmod -lumfpack
 
 
-CFLAGS += -O3
+CFLAGS += -O3 -D'UF_long=SuiteSparse_long'
 
 include ../makefile.mk

@@ -31,10 +31,10 @@ CFLAGS += $(addprefix  -I, $(INCLUDE_PATH))
 # Build external library cmdline parameter, those -Xlinker directives instructs
 # the linker find the correct linking sequence regardless the order of items
 # specified in EXTERNAL_LIBS.
-LOADLIBES += \
-	-Xlinker --start-group \
-		$(addprefix  -Xlinker , $(EXTERNAL_LIBS)) \
-	-Xlinker --end-group
+# LOADLIBES += \
+#	-Xlinker --start-group \
+#		$(addprefix  -Xlinker , $(EXTERNAL_LIBS)) \
+#	-Xlinker --end-group
 
 # PROGRAM_NAME is provided in custom makefile
 $(PROGRAM_NAME): $(object-list)
