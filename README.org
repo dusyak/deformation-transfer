@@ -15,14 +15,14 @@ detailed explaination of this algorithm and here
 (http://people.csail.mit.edu/sumner/research/deftransfer/) for demonstrations
 and mesh data.
 
+* Ubuntu support
+
+This fork contains updated version that uses system libraries instead of shipping pre-build binaries.
+Compilation tested on Ubuntu 17.04.
 
 * Compile
 
-You need CHOLMOD (http://www.cise.ufl.edu/research/sparse/cholmod/) and UMFPACK
-(http://www.cise.ufl.edu/research/sparse/umfpack/) to compile it, drop the
-header files and libs to the ./external folder if you've compiled them on your
-own, or just try the precompiled version in this repository.
-
+Build process depends on the package `libsuitesparse-dev`. So it should be installed.
 After these libs has been set properly, type =make= to build them all.
 
 
