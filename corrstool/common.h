@@ -14,7 +14,7 @@
 /* camera perspective properties */
 #define  CAM_FOVY           60
 #define  CAM_ZNEAR          0.01
-#define  CAM_ZFAR           50
+#define  CAM_ZFAR           250
 
 
 /* pick-up indicators */
